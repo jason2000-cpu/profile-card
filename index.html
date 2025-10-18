@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" >
+    <title>Profile Card | HNG Stage 0</title>
+</head>
+<body>
+    <article data-testid="test-profile-card">
+        <div class="content">
+            <header>
+                <figure>
+                    <img data-testid="test-user-avatar" src="./assets/profile.jpg" alt="user profile image" >
+                </figure>
+                <time data-testid="test-user-time"></time>
+            </header>
+            <section>
+                <h2 data-testid="test-user-name">Jackson Mwangi</h2>
+                <p data-testid="test-user-bio">
+                    I’m a full-stack Software Engineer skilled in JavaScript, 
+                    React, TypeScript, Node.js, and Python with a 
+                    focus on building secure, scalable, and user-friendly 
+                    applications.
+                </p>
+                <nav data-testid="test-user-social-links">
+                    <ul >
+                        <li data-testid="test-user-social-linkedin">
+                            
+                            <a href="https://www.linkedin.com/in/jackson-muturi-b749081a0/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/linkedin.png" alt="LinkedIn" >
+                            </a>
+                        </li>
+                        <li data-testid="test-user-social-twitter">
+                            <a href="https://x.com/JACKSON27068507" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/twitter.png" alt="Twitter" >
+                            </a>
+                        </li>
+                        <li data-testid="test-user-social-facebook">
+                            <a href="https://www.facebook.com/mwangi.jackson.1004/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/facebook.png" alt="Facebook" >
+                            </a>
+                        </li>
+                        <li data-testid="test-user-social-instagram">
+                            <a href="https://www.instagram.com/jasonmwangi48/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/instagram.png" alt="Instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+        <div class="hobbies-dislikes">
+            <section class="test-user-hobbies">
+                <h4 class="div-title">Hobbies</h4>
+                <ul>
+                    <li>Playing Video Games</li>
+                    <li>Travelling</li>
+                    <li>Driving</li>
+                </ul>
+            </section>
+            <section class="test-user-dislikes">
+                <h4 class="div-title">Dislikes</h4>
+                <ul>
+                    <li>Bad Developer Practices</li>
+                    <li>Disrespect</li>
+                    <li>Poor Organization</li>
+                </ul>
+            </section>
+        </div>
+    </article>
+
+    <script src="index.js"></script>
+</body>
+</html>
