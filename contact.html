@@ -15,27 +15,27 @@
                 <div class="form-group fullName">
                     <label for="full-name">Full Name</label>
                     <input data-test-id="test-contact-name" type="text" id="full-name" name="full-name" aria-describedby="name-error" required />
-                    <span class="error" id="name-error"> Please enter a valid name.</span>
+                    <span data-test-id="test-contact-error-name" class="error" id="name-error"> Please enter a valid name.</span>
                 </div>
                 <div class="form-group email">
                     <label for="email">Email</label>
                     <input data-test-id="test-contact-email" type="text" id="email" name="email" aria-describedby="email-error" required />
-                    <span class="error" id="email-error"> Please enter a valid email.</span>
+                    <span class="error" data-test-id="test-contact-error-email"  id="email-error"> Please enter a valid email.</span>
                 </div>
             </div>
             <div class="user-message-section">
                 <div class="form-group subject">
                     <label for="subject">Subject</label>
                     <input data-test-id="test-contact-subject" type="text" id="subject" name="subject" aria-describedby="subject-error" required >
-                    <span class="error" id="subject-error">Please enter a valid Subject.</span>
+                    <span class="error" data-test-id="test-contact-error-subject"  id="subject-error">Please enter a valid Subject.</span>
                 </div>
                 <div class="form-group message">
                     <label for="message">Message</label>
-                    <textarea type="text" id="message" name="message" aria-describedby="message-error" required></textarea>
-                    <span class="error" id="message-error"> Message should be at least 10 characters.</span>
+                    <textarea type="text" id="message" name="message" aria-describedby="message-error" data-test-id="test-contact-message" required></textarea>
+                    <span class="error" data-test-id="test-contact-error-message" id="message-error"> Message should be at least 10 characters.</span>
                 </div>
             </div>
-            <button type="submit">Submit</button>
+            <button data-test-id="test-contact-submit" type="submit">Submit</button>
         </form>
 
         <nav class="page-links">
