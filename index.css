@@ -102,6 +102,19 @@ li img {
     margin-bottom: 10px;
 }
 
+.page-links a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    color: #3D7793;
+    padding: 0px 2px;
+    text-underline-offset: 2px;
+    transition: text-decoration-color 150ms ease-in-out, text-underline-offset 150ms ease-in-out;
+}
+
+.page-links a:hover {
+   text-decoration-color: currentColor;
+}
+
 @media (min-width:768px) {
     .content{
         display: grid;
