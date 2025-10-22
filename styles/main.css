@@ -1,0 +1,21 @@
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page-links a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    color: #3D7793;
+    padding: 0px 2px;
+    text-underline-offset: 2px;
+    transition: text-decoration-color 150ms ease-in-out, text-underline-offset 150ms ease-in-out;
+}
+
+.page-links a:hover {
+   text-decoration-color: currentColor;
+}

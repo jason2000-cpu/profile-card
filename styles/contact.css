@@ -1,0 +1,103 @@
+
+main {
+    width: 90%;
+    border: 1px solid rgba(7, 3, 3, .5);
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin: 8px;
+    background-color: rgba(2, 75, 15, 0.1);
+    font-size: 16px;
+    /* display: grid;
+    grid-template-columns: 20rem 20rem; */
+    box-shadow: 2px 2px 2px 1px rgba(7, 3, 3, .5);
+}
+
+.error {
+    font-size: small;
+    color: rgba(255, 0, 0, 0.763)
+}
+
+/* .user-info-section {
+    width: 100%;
+    display: grid;
+    border: 2px solid black;
+    grid-template-columns: 20rem 20rem;
+} */
+.user-message-section {
+    display: grid;
+    gap: 1rem
+}
+
+/* .fullName, .email {
+    width: 50rem;
+    border: 2px solid blue;
+} */
+
+.form-group > * + * {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px;
+    width: 100%;
+    margin-top: 1px;
+}
+
+.message {
+    width: 100%;
+}
+
+input[type="text"], textarea {
+    padding: 0.5rem 0.2rem;
+    outline: none;
+}
+
+textarea {
+    border: 2px solid black;
+    width: 10rem
+}
+
+.success-container {
+    position: absolute;
+    background: transparent;
+    background-color: rgba(62, 62, 62, 0.329);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid green; */
+    /* border-radius: 2px; */
+}
+
+.success-message {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem 4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: green
+}
+
+button {
+    margin-top: 1rem;
+    background: #3D7793;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 3px;
+    color: #FFFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (min-width:768px) {
+    main {
+        width: fit-content;
+    }
+    .user-info-section {
+        display: grid;
+        grid-template-columns: 12rem 12rem;
+        gap: 2rem;
+    }
+
+}

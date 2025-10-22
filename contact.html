@@ -3,11 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css" >
+    <link rel="stylesheet" href="/styles/contact.css" >
     <title>Contact Me | HNG stage 1</title>
 </head>
 <body>
-    <article>
-        Contact Page !
-    </article>
+    <main data-test-id="test-contact-page">
+        <h1>Contact Me</h1>
+        <form>
+            <div class="user-info-section">
+                <div class="form-group fullName">
+                    <label for="full-name">Full Name</label>
+                    <input data-test-id="test-contact-name" type="text" id="full-name" name="full-name" required />
+                    <span class="error" id="name-error"> Please enter a valid name.</span>
+                </div>
+                <div class="form-group email">
+                    <label for="email">Email</label>
+                    <input data-test-id="test-contact-email" type="text" id="email" name="email" required />
+                    <span class="error" id="email-error"> Please enter a valid email.</span>
+                </div>
+            </div>
+            <div class="user-message-section">
+                <div class="form-group subject">
+                    <label for="subject">Subject</label>
+                    <input data-test-id="test-contact-subject" type="text" id="subject" name="subject" required >
+                    <span class="error" id="subject-error">Please enter a valid Subject.</span>
+                </div>
+                <div class="form-group message">
+                    <label for="message">Message</label>
+                    <textarea type="text" id="message" name="message" required></textarea>
+                    <span class="error" id="message-error"> Message should be at least 10 characters.</span>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <nav class="page-links">
+            <a href="/index.html" >Home</a>
+            <a href="/about.html" >About Me</a>
+        </nav>
+    </main>
+
+    <script src="/Js/contact.js" ></script>
 </body>
 </html>
