@@ -37,9 +37,16 @@ profile-card/
 │
 ├── index.html          # Main HTML structure
 ├── index.css           # Styling and responsive design
-├── index.js           # JavaScript functionality
+├── index.js            # JavaScript functionality
 ├── README.md           # Project documentation
-│
+├── styles/
+|   ├── about.css       # CSS for about page
+|   ├── contact.css     # CSS for contact page
+|   ├── index.css       # CSS for index page
+│   └── main.css        # main css file
+├── scripts/
+│   ├── contact.js      # JavaScript for contact page
+│   └── index.js        # JavaScript for index page
 └── assets/
     ├── profile.jpg     # Default avatar image
     ├── linkedin.png    # LinkedIn icon
